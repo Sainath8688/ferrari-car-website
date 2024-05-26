@@ -1,0 +1,181 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background: black;
+}
+.container{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    border: 1px solid #fdc304;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background:#000000;
+    box-shadow: 0 0 10px #fdc304;
+}
+.nav-bar ul{
+    display: flex;
+    float: right;
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+.nav-bar ul li{
+    margin-right:30px;
+    list-style: none;
+    color:#fdc304
+}
+li:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+}
+.car{
+    transform: rotateY(180deg);
+    margin: 60px 0px 0px  90px;
+}
+.logo img{
+    position: absolute;
+    top:20px;
+    width: 150px;
+}
+.search-bar .search{
+    position: absolute;
+    top:14px;
+    left: 200px;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background: transparent;
+    padding-left: 24px; 
+    border:1px solid #fdc304;
+    color:white;
+   
+}
+.search::placeholder{font-size: 18px;
+}
+.search-bar i{
+    position: absolute;
+    top:19px;
+    left:205px;
+    color:white;
+}
+.container .details{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    top:70px
+}
+.detail-1,.detail-2,.detail-3,.detail-4{
+    border:1px solid transparent;
+    padding:0px 5px 0px 45px;
+    margin:5px 0px 0px 0px;
+    background: #fdc304;
+    border-radius: 20px;
+    color: black;
+}
+.hp-number,.seconds,.speed-heading,.engine{
+    margin-bottom: -3px;
+    display: flex;
+    justify-content: center;
+}
+.a,.b,.c,.d{
+    display: flex;
+    justify-content: center;
+}
+.horse-icon,.car-icon,.speed-icon,.engine-icon{
+    position: absolute;
+    display: flex;
+    left: 5px;
+    margin:30px 10px 0px 5px;
+}
+.container .action{
+    position: absolute;
+    top:60px;
+    left:190px;
+    font-size: 20px;
+}
+.typing-text{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 5s steps(40, end )forwards,blinking 0.7s step-end infinite;
+}
+@keyframes typing{
+    from{width:0%}
+    to{width:100%}
+}
+@keyframes blinking {
+    from,to{border-color:#fdc304}
+    50%{border-color:rgb(0, 0, 0)}
+    
+}
+
+.container .model{
+    width:200px;
+    position:absolute;
+    top:140px;
+    left:200px;
+}
+.model .model-name{
+   font-size: 35px;
+    width: 300px; 
+}
+.model .price{
+    font-size: 25px;
+    width: 300px;
+    margin-top: -10px;
+}
+.container .social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    bottom:80px;
+}
+.twitterx,.insta,.youtube,.fb{
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 50%;
+    
+}
+.twitterx:hover,.insta:hover,.youtube:hover,.fb:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+   cursor: pointer;
+    
+}
+
+.book{
+    display:flex;
+    position: relative;
+    margin:-30px 0px 0px 300px;
+    font-size: 30px;
+}
+.test-drive{
+    text-decoration: none;
+    border:1px solid #fdc304;
+    border-radius: 30px;
+    padding: 10px;
+    color:#fdc304;
+    box-shadow:  0 0 10px #fdc304;
+}
+.test-drive:hover{
+    color:black;
+    border: 1px solid transparent;
+    background: #fdc304;
+    
+}
+.animate-color{
+   width: 500px;
+   height: 100px;
+   background: #fdc304;
+   transform: rotate(125deg);
+   position: absolute;
+   left:-156px
+}
+a{text-decoration: none;}
+span{color:#fdc304}
